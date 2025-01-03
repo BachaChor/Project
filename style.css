@@ -5,6 +5,14 @@
     
 }
 
+.source-code-pro-newFont {
+  font-family: "Source Code Pro", serif;
+  
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+}
+
 body {
     background-image: url(image/tree.jpg);
     background-size:cover;
@@ -25,7 +33,7 @@ body {
     border-radius: 30px;
     background-color: rgba(255, 255, 255, 0.3); /* Translucent white */
     border: 1px solid rgba(255, 255, 255, 0.5); /* Optional border for effect */
-
+    
 }
 
 .content_holder {
@@ -33,7 +41,10 @@ body {
     width: 90%;
     display: flex;
     flex-direction: column;
-    /* background-color: rgba(0, 255, 0, 0.4);  */
+    border: 0;
+    /* border-radius: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.5); Optional border for effect */
+    /* background-color: rgba(25, 26, 25, 0.4);  */
 
 }
 
@@ -47,23 +58,71 @@ input {
     color: black;
     box-shadow: 0 0 12px black;
     font-size: 15px;
+    transition: transform 0.3s ease;
 }
+
+input::placeholder {
+    color: black;
+}
+
+
 label {
     margin-left: 20px;
     padding: 20px;
     font-size: 20px;
     font-weight: 700;
+    color:white;
+    filter: drop-shadow(0 0 10px rgb(0, 0, 0));
+    font-family: "Source Code Pro", serif;
+}
+
+
+#submit_button {
+    height: 10%;
+    width: 30%;
+    margin: 15px 150px;
+    outline: none;
+    border: 0;
+    border-radius: 30px;
+    font-size: 1.1rem;
+    padding-top: 2px;
+    backdrop-filter: blur(15px);
+    background-color: rgb(255, 255, 255, 0.3);
+    transition: transform 0.3s ease;
+}
+
+#submit_button:hover {
+    background-color: rgba(0, 0, 0, 0.3);
     color: white;
-    filter: drop-shadow(0 0 12px black);
-
+    transform: translate(10px, -5px);
 }
 
-@media only screen and (min-width: 767px) and (max-width: 1023) {
-    body {
-        background-size: contain;
-        background-attachment: scroll;
-    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+input:hover {
+    transform: scale(1.1);
 }
 
-/* label:hover,  */
+.card:hover {
+    transition: transform 0.2s ;
+    background-color: rgba(255, 255, 255, 0.2); 
+    
+}
 
